@@ -37,8 +37,6 @@ namespace WindowsFormsApp1
             {
                 temperature += 5;
 
-                if (handlerList != null)
-                {
                     handlerList("Температура: " + temperature + " °C");
 
                     if (temperature > 50)
@@ -46,7 +44,7 @@ namespace WindowsFormsApp1
 
                     else if (temperature > 30)
                         handlerList("Попередження: дуже гаряче");
-                }
+                
             }
         }
     }
